@@ -1,9 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
-</html>
+<!-- ICS2O-Unit5-5-04-HTML-MDL -->
+<html lang="en-ca">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Ticket Pricing Program" />
+  <meta name="keywords" content="mths, icd2o" />
+  <meta name="author" content="Catherine Vu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-purple.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <link
+  rel="apple-touch-icon"
+  sizes="180x180" 
+  href="./apple-touch-icon.png" 
+  />
+  <link
+  rel="icon" 
+  type="image/png" 
+  sizes="32x32" 
+  href="./favicon-32x32.png" 
+  />
+  <link 
+  rel="icon" 
+  type="image/png" 
+  sizes="16x16" 
+  href="./favicon-16x16.png" 
+  />
+  <link rel="manifest" href="./site.webmanifest" />
+  <title>Musemum Pricing Ticket, in JS</title>
+</head>
+
+<body>
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Musemum Ticket Prices, in JS</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="right-image">
+        <img src="./images/81GlLDxbcwL._AC_UF1000,1000_QL80_.jpg" alt="laptop image" />
+      </div>
+      <br>
+      <div class="page-content">Make sure to capitalize the day of the week and enter in your age.</div>
+      </form>
+      <!-- Input Field -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input 
+        class="mdl-textfield__input"
+        type="text" 
+        pattern="-?[0-9]*(\.[0-9]+)?" 
+        id="user-age"
+        />
+        <label class="mdl-textfield__label" for="user-age">Enter your age...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <br />
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="day">
+        <select class="mdl-textfield__input" id="day">
+
+      </option value="monday">Monday</option>
+      </option value="tuesday">Tuesday</option>
+      </option value="wednesday">Wednesday</option>
+      </option value="thursday">Thursday</option>
+      </option value="friday">Friday</option>
+      </option value="saturday">Saturday</option>
+      </option value="sunday">Sunday</option>
+      </div>
+      <br />
